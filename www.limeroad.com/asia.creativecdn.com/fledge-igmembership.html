@@ -1,0 +1,23 @@
+<html><body>
+<script>
+    if (navigator.joinAdInterestGroup) {
+        const addIgScript = document.createElement('script');
+        let src = null;
+        if (navigator.runAdAuction) {
+            if (window.FencedFrameConfig || 'src' in document.createElement('fencedframe')) {
+                src = 'https://asia.creativecdn.com/fledge-igmembership?ntk=mPQCZUDemyTHbw7N7AK8v27qqi0Oawz0ONR2Sr-_c0GGa-QnT_AGZQ9U2wG5JRW_4J28GacRFxwpduAUddW7UA';
+            } else {
+                src = 'https://asia.creativecdn.com/fledge-igmembership?ntk=mPQCZUDemyTHbw7N7AK8v27qqi0Oawz0ONR2Sr-_c0GGa-QnT_AGZQ9U2wG5JRW_gzzoTjfgHdIihrqIVMfuwQ';
+            }
+        } else {
+            if (window.FencedFrameConfig || 'src' in document.createElement('fencedframe')) {
+                src = 'https://asia.creativecdn.com/fledge-igmembership?ntk=mPQCZUDemyTHbw7N7AK8v27qqi0Oawz0ONR2Sr-_c0GGa-QnT_AGZQ9U2wG5JRW_-TrXPVrLS-9QirZIkkNMMw';
+            } else {
+                src = 'https://asia.creativecdn.com/fledge-igmembership?ntk=mPQCZUDemyTHbw7N7AK8v27qqi0Oawz0ONR2Sr-_c0GGa-QnT_AGZQ9U2wG5JRW_Rpx4KwOSVzToT9a_snONmA';
+            }
+        }
+        addIgScript.setAttribute('src', src);
+        document.body.appendChild(addIgScript);
+    }
+</script>
+</body></html>
